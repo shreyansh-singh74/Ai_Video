@@ -18,7 +18,7 @@ interface FileUplodProps{
 const FileUpload = ({
     onSuccess,
     onProgress,
-    fileType
+    fileType 
 }:FileUplodProps) => {
 
     const [uploading,setUploading] = useState(false);
@@ -48,7 +48,7 @@ const FileUpload = ({
             const authRes = await fetch("/api/auth/imagekit-auth");
             const auth = await authRes.json()
 
-            
+
 
         } catch (error) {
             
